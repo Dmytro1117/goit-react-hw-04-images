@@ -35,7 +35,7 @@ const getImages = async (query, page) => {
       if (hits.length === 0) {
         return  Notify.warning('Images not found');
       }
-      setImages((imag) => [...hits, ...imag ])
+      setImages((imag) => [...imag, ...hits])
       setLoadMore(page < Math.ceil(totalHits / per_page))
     }
     catch (error) {
