@@ -1,3 +1,4 @@
+// import React, { Component } from 'react';
 import {useState, useEffect} from 'react';
 import { fetchImages } from './api/api';
 import  Searchbar from './Searchbar/Searchbar';
